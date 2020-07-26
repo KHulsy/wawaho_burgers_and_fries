@@ -1,0 +1,17 @@
+.burger {
+  /* Contains all the parts of the burger */
+  /* Bun, cheese, meat, lettuce, and sesame seeds */
+}
+But that's too limited, we won't be able to fit a whole burger inside a single selector. To find more space, we should use the :before and :after pseudo elements.
+
+.burger {
+  /* The cheese, meat, and lettuce */
+}
+
+.burger:before {
+  /* The bun */
+}
+
+.burger:after {
+  /* The sesame seeds */
+}
