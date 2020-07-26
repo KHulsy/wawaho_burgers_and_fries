@@ -1,1 +1,3 @@
-The first rule of orm.js...
+selectAll()
+insertOne()
+updateOne()
