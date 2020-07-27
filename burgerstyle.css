@@ -14,4 +14,129 @@ But that's too limited, we won't be able to fit a whole burger inside a single s
 
 .burger:after {
   /* The sesame seeds */
+}.burger {
+  /* The cheese, meat, and lettuce */
+}
+
+.burger:before {
+  /* The bun */
+}
+
+.burger:after {
+  /* The sesame seeds */
+}
+.burger:before {
+  content: ""; 
+  display: block;
+
+  /* Space between the buns */
+  width: 400px;
+  height: 55px;
+
+  /* Top bun */
+  border-top: 80px solid #f5b230;
+
+  /* Bottom bun */
+  border-bottom: 50px solid #f5b230;
+}
+.burger:before {
+  /* Same code as previously */
+  content: ""; 
+  display: block;
+  width: 400px;
+  height: 55px;
+  border-top: 80px solid #f5b230;
+  border-bottom: 50px solid #f5b230;
+
+  /* New line */
+  border-radius: 30% 30% 20% 20%; 
+}
+.burger {
+  /* Size */
+  width: 380px;
+  height: 40px;
+
+  /* Color and shape */
+  background-color: #681f24;
+  border-radius: 15px; 
+}
+.burger {
+  /* Same as previously */
+  /* We just removed the background color */
+  width: 380px;
+  height: 40px;
+  border-radius: 15px;
+
+  /* New line */ 
+  /* The parameters: margin-left, margin-top, color */
+  box-shadow: 10px 85px #681f24; 
+}
+.burger {
+  /* Same code as before */
+  width: 380px;
+  height: 40px;
+  border-radius: 15px; 
+
+  /* Updated box shadow */
+  box-shadow: 
+      10px 50px #fddb28, /* Cheese */
+      10px 85px #681f24, /* Meat */
+      10px 120px #82af15; /* Lettuce */
+}
+.burger:after {
+  content: "";
+  display: block;
+
+  /* Size and shape */
+  width: 10px;
+  height: 6px;
+  border-radius: 40%;
+
+  /* Position and color */
+  box-shadow: 100px -165px #ffffff;
+}
+.burger:after {
+  /* Keep same code as before */
+  content: "";
+  display: block;
+  width: 10px;
+  height: 6px;
+  border-radius: 40%;
+
+  /* Add new box-shadow */
+  box-shadow: 
+      /* Top row */
+      100px -165px #ffffff,
+      160px -165px #ffffff,
+      230px -165px #ffffff,
+      290px -165px #ffffff,
+
+      /* Bottom row */
+      60px -135px #ffffff,
+      125px -135px #ffffff,
+      190px -135px #ffffff,
+      255px -135px #ffffff,
+      330px -135px #ffffff;
+}
+.burger:before {
+  /* Change the content property */
+  content: "▾";
+
+  /* Color and Size of the ▾ */
+  color: #fddb28;
+  font-size: 120px;
+
+  /* Then keep everything else the same */
+}
+.burger:before {
+  /* Add 8 spaces before the triangle */
+  content: "        ▾";
+
+  /* Actually display the spaces in the "content" */ 
+  white-space: pre;
+
+  /* Vertically position the ▾ */
+  line-height: 25px;
+
+  /* Then keep everything the same */
 }
